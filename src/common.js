@@ -62,11 +62,14 @@ export function isMobileCaptcha(number) {
  * @param number
  * @returns {*}
  */
-export function currency(number) {
-    if (number && number.toFixed) {
-        return number.toFixed(2)
+function currency(number) {
+    if(isNaN(number)){
+        number=parseFloat(number)
     }
-    return "0.00"
+    if (number && number.toFixed) {
+        return number.toFixed(2);
+    }
+    return "0.00";
 }
 
 /**
