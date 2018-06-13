@@ -6,10 +6,10 @@
 
  - package.json中增加
 
-`"vutils": "git+https://github.com/tza17313/VUtils.git#a559f5e6519213eb25883758a32290b267baba3a"
+`"baie-vutils": "latest"
 `
 
- - 使用`import {isNumber} from 'vutils'`来调用
+ - 使用`import {isNumber} from 'baie-vutils'`来调用
 
  - 每个方法的具体使用方法可以查看`./test/`目录下的测试用例；
 
